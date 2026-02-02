@@ -24,4 +24,5 @@ jobs:
       - name: Format check (black)
         run: black --check .
       - name: Run tests
-        run: pytest -q
+        run: |
+          PYTHONPATH=. pytest -q
