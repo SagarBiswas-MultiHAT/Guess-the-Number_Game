@@ -1,0 +1,3 @@
+# No runtime dependencies required; this file exists for packaging clarity.
+# Add runtime dependencies here if your project needs them, e.g.:
+# requests>=2.0
