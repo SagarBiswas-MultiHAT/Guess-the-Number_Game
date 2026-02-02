@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
 import random
-from pathlib import Path
-import tempfile
-import json
 
 import perfect_guess as pg
 
