@@ -15,7 +15,10 @@ def test_get_valid_number_rejects_non_int_then_accepts(monkeypatch, capsys):
     inputs = iter(["x", "12", "7"])
     monkeypatch.setattr("builtins.input", lambda prompt="": next(inputs))
     outputs = []
-    monkeypatch.setattr("builtins.print", lambda *args, **kwargs: outputs.append(" ".join(map(str, args))))
+    monkeypatch.setattr(
+        "builtins.print",
+        lambda *args, **kwargs: outputs.append(" ".join(map(str, args))),
+    )
     v = pg.get_valid_number("prompt", 1, 10, input_fn=input, output_fn=print)
     assert v == 7
     # ensure error message printed at least once
