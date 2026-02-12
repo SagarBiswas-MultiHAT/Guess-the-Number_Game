@@ -1,5 +1,16 @@
 # Perfect Guess
 
+<div align="right">
+
+[![CI](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game/actions/workflows/ci.yml/badge.svg)](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![Tests](https://img.shields.io/badge/tests-pytest-brightgreen)](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game/actions)
+[![License](https://img.shields.io/github/license/SagarBiswas-MultiHAT/GuessTheNumber-Game)](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game/blob/main/LICENSE)
+[![Last commit](https://img.shields.io/github/last-commit/SagarBiswas-MultiHAT/GuessTheNumber-Game)](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game)
+[![Issues](https://img.shields.io/github/issues/SagarBiswas-MultiHAT/GuessTheNumber-Game)](https://github.com/SagarBiswas-MultiHAT/GuessTheNumber-Game/issues)
+
+</div>
+
 A small, well-tested, and production-quality CLI number-guessing game written in Python.
 This repository demonstrates clean separation of concerns, deterministic testing, persistent user state, and GitHub Actions CI — ideal for portfolios and interviews.
 
@@ -7,7 +18,7 @@ This repository demonstrates clean separation of concerns, deterministic testing
 
 ## Quick start
 
-````bash
+```bash
 # run locally
 python perfect_guess.py
 
@@ -43,7 +54,7 @@ Run the program directly (no install required):
 
 ```bash
 python perfect_guess.py
-````
+```
 
 Useful options:
 
@@ -101,7 +112,7 @@ Notes: the badge reports status for the default branch and the workflow named `c
 **Design notes**
 
 - I/O injection and deterministic RNG are intentional: they make unit tests simple and reliable.
-- The high-score saving intentionally ignores save errors to avoid breaking the user experience when the home directory is not writable.
+- The high-score saving intentionally ignores(save errors to avoid breaking the user experience when the home directory is not writable.
 
 **Contributing**
 
